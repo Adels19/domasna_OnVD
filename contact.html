@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+   <meta charset="UTF-8">
+   <title>Вила Адела - Контакт</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+   <nav class="navbar">
+      <div class="nav-container">
+         <div class="logo">
+            <h2>Вила Адела</h2>
+         </div>
+         <ul class="nav-menu">
+            <li><a href="index.html">Почetна</a></li>
+            <li><a href="gallery.html">Галерија</a></li>
+            <li><a href="pricing.html">Цени</a></li>
+            <li><a href="contact.html" class="active">Контакт</a></li>
+         </ul>
+      </div>
+   </nav>
+</header>
+
+<main>
+   <section class="page-header">
+      <div class="container">
+         <h1>Контакт и резервации</h1>
+         <p>Стапете во контакт со нас за да го резервирате вашиот совршен настан</p>
+      </div>
+   </section>
+
+   <section class="contact-section">
+      <div class="container">
+         <div class="contact-grid">
+            <div class="contact-info">
+               <h2>Контакт информации</h2>
+               <div class="contact-item">
+                  <div class="contact-icon">📞</div>
+                  <div class="contact-details">
+                     <h3>Телефон</h3>
+                     <p>+389 77 743 100</p>
+                     <p>+389 75 784 764</p>
+                  </div>
+               </div>
+               <div class="contact-item">
+                  <div class="contact-icon">✉️</div>
+                  <div class="contact-details">
+                     <h3>Е-пошта</h3>
+                     <p> vilaadela@gmail.com</p>
+                  </div>
+               </div>
+               <div class="contact-item">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-details">
+                     <h3>Адреса</h3>
+                     <p>Шаторов Камен</p>
+                     <p>7500 Прилеп, Македонија</p>
+                  </div>
+               </div>
+               <div class="contact-item">
+                  <div class="contact-icon">🕐</div>
+                  <div class="contact-details">
+                     <h3>Работно време</h3>
+                     <p>Понеделник - Петок: 11:00 - 01:00</p>
+                     <p>Викенд: 11:00 - 03:00</p>
+                  </div>
+               </div>
+
+               <div class="social-media">
+                  <h3>Следете нè</h3>
+                  <div class="social-links">
+                     <a href="https://www.facebook.com/vikendicaadela" class="social-link">📘 Facebook</a>
+                     <a href="https://www.instagram.com/villa.adella/" class="social-link">📷 Instagram</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="reservation-form">
+               <h2>Резервирајте сега</h2>
+               <form id="reservationForm">
+                  <div class="form-group">
+                     <label for="name">Име и презиме *</label>
+                     <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="email">Е-пошта *</label>
+                     <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="phone">Телефон *</label>
+                     <input type="tel" id="phone" name="phone" required>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group">
+                        <label for="date">Датум на настанот *</label>
+                        <input type="date" id="date" name="date" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="guests">Број на гости *</label>
+                        <select id="guests" name="guests" required>
+                           <option value="">Изберете</option>
+                           <option value="20">До 20 гости</option>
+                           <option value="40">20-60 гости</option>
+                           <option value="60">60-100 гости</option>
+                           <option value="80">100-150 гости</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="package">Пакет *</label>
+                     <select id="package" name="package" required>
+                        <option value="">Изберете пакет</option>
+                        <option value="basic">Основен пакет - 100</option>
+                        <option value="premium">Премиум пакет - €250</option>
+                        <option value="luxury">Луксузен пакет - €500</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="event-type">Тип на настан</label>
+                     <select id="event-type" name="event-type">
+                        <option value="">Изберете тип</option>
+                        <option value="wedding">Свадба</option>
+                        <option value="birthday">Роденден</option>
+                        <option value="corporate">Корпоративен настан</option>
+                        <option value="anniversary">Моминска</option>
+                        <option value="other">Друго</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label>Дополнителни услуги</label>
+                     <div class="checkbox-group">
+                        <label class="checkbox-label">
+                           <input type="checkbox" name="services" value="catering">
+                           Кетеринг
+                        </label>
+                        <label class="checkbox-label">
+                           <input type="checkbox" name="services" value="photography">
+                           Фотографирање
+                        </label>
+                        <label class="checkbox-label">
+                           <input type="checkbox" name="services" value="dj">
+                           DJ услуги
+                        </label>
+                        <label class="checkbox-label">
+                           <input type="checkbox" name="services" value="decorations">
+                           Дополнителни декорации
+                        </label>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="message">Дополнителни забелешки</label>
+                     <textarea id="message" name="message" rows="4" placeholder="Опишете ги вашите специјални барања или прашања..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Испрати барање</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="map-section">
+      <div class="container">
+         <h2>Нашата локација</h2>
+         <div class="map-container" style="width: 100%; height: 400px;">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2974.356796158729!2d21.5755006!3d41.3453318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13542d1e376ef5f5%3A0x0!2zNDHCsDIwJzU2LjAiTiAyMcKwMzUnMzAuMSJF!5e0!3m2!1sen!2smk!4v1688198400000!5m2!1sen!2smk"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+   </section>
+
+</main>
+
+<footer>
+   <div class="container">
+      <div class="footer-content">
+         <div class="footer-section">
+            <h3>Вила Адела</h3>
+            <p>Вашето совршено место за незаборавни прослави.</p>
+         </div>
+         <div class="footer-section">
+            <h3>Контакт</h3>
+            <p>📞 +389 77 743 100</p>
+            <p>✉️ vilaadela@gmail.com</p>
+         </div>
+         <div class="footer-section">
+            <h3>Адреса</h3>
+            <p>Шаторов Камен<br>Прилеп, Македонија</p>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <p>&copy; 2025 Вила Адела. Сите права задржани.</p>
+      </div>
+   </div>
+</footer>
+
+<script>
+   // Form submission handler
+   document.getElementById('reservationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Вашето барање е успешно испратено! Ќе ве контактираме во најкраток можен рок.');
+   });
+</script>
+</body>
+</html>

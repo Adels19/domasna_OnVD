@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вила Адела - Галерија</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Вила Адела</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Почетна</a></li>
+                <li><a href="gallery.html" class="active">Галерија</a></li>
+                <li><a href="pricing.html">Цени</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Галерија</h1>
+            <p>Погледнете ги нашите прекрасни простори и моментите од претходните прослави</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-tab="exterior">Екстериер</button>
+                <button class="tab-btn" data-tab="interior">Ентериер</button>
+                <button class="tab-btn" data-tab="events">Настани</button>
+            </div>
+
+            <div class="gallery-content active" id="exterior">
+                <h2>Екстериер и градина</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="sliki/prostor_za_ceremonii.jpg" alt="Надворешен простор">
+                        <div class="gallery-overlay">
+                            <p>Простор за церемонии</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/fontana.jpg" alt="Фонтана">
+                        <div class="gallery-overlay">
+                            <p>Декоративна фонтана</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/platforma.jpg" alt="Платформа">
+                        <div class="gallery-overlay">
+                            <p>Платформа над рибник</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-content" id="interior">
+                <h2>Ентериер и сала</h2>
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">
+                        <img src="sliki/enterier1.jpg" alt="Мали прослави">
+                        <div class="gallery-overlay">
+                            <p>Мали прослави</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/enterier3.jpg" alt="Големи прослави">
+                        <div class="gallery-overlay">
+                            <p>Големи прослави</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/enterier2.jpg" alt="Диско-забава">
+                        <div class="gallery-overlay">
+                            <p>Диско-забава</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-content" id="events">
+                <h2>Моменти од прослави</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="sliki/свадба.jpg" alt="Свадба">
+                        <div class="gallery-overlay">
+                            <p>Свадбена церемонија</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/роденден.jpg" alt="Роденден">
+                        <div class="gallery-overlay">
+                            <p>Роденденска прослава</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src=sliki/sorabotka.jpg alt="Корпоративен настан">
+                        <div class="gallery-overlay">
+                            <p>Корпоративен настан</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/фамилијарна-прослава.jpg" alt="Фамилијарна прослава">
+                        <div class="gallery-overlay">
+                            <p>Семејна прослава</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/моминска.jpg" alt="Забава">
+                        <div class="gallery-overlay">
+                            <p>Моминска прослава</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sliki/декорации.jpg" alt="Декорации">
+                        <div class="gallery-overlay">
+                            <p>Прекрасни декорации</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Вила Адела</h3>
+                <p>Вашето совршено место за незаборавни прослави.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакт</h3>
+                <p>📞 +389 77 743 100</p>
+                <p>✉️ vilaadela@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Адреса</h3>
+                <p>Шаторов Камен<br>Прилеп, Македонија</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Вила Адела. Сите права задржани.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const galleryContents = document.querySelectorAll('.gallery-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tab = btn.getAttribute('data-tab');
+
+            tabBtns.forEach(b => b.classList.remove('active'));
+            galleryContents.forEach(c => c.classList.remove('active'));
+
+            btn.classList.add('active');
+            document.getElementById(tab).classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
